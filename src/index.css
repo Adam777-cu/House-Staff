@@ -61,7 +61,7 @@ header .shop-cart {
     right: 0;
     width: 450px;
     background:#fafafa;
-    box-shadow: 4px 5px 15px -7px  #606060;
+    box-shadow: 5px 5px 15px 5px  #606060;
     z-index: 10;
     padding: 20px;
     padding-bottom: 0;
@@ -101,6 +101,14 @@ header .shop-cart .item .delete-icon {
 header .shop-cart .item .delete-icon:hover {
     color: #ce0808;
     transform: scale(1.5);
+}
+
+header .shop-cart .summa {
+    float: left;
+    font-weight: 600;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 header .presentation {
