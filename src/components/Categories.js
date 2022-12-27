@@ -19,15 +19,15 @@ export class Categories extends Component {
                     name: 'Столы'
                 },
                 {
-                    key: 'sofa',
+                    key: 'sofas',
                     name: 'Диваны'
                 },
                 {
-                    key: 'light',
+                    key: 'lamps',
                     name: 'Свет'
                 },
                 {
-                    key: 'cabinets',
+                    key: 'closets',
                     name: 'Шкафы'
                 }
             ]
@@ -35,7 +35,11 @@ export class Categories extends Component {
     }
     render() {
         return (
-        <div>Categories</div>
+        <div className='categories'>
+            {this.state.categories.map(el => (
+                <div key = {el.key} onClick={() => this.props.chooseCategory(el.key)}>  {el.name}  </div>
+            ))}
+        </div>
         )
     }
 }
